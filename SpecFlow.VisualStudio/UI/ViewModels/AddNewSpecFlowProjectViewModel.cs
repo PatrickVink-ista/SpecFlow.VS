@@ -4,17 +4,17 @@ namespace SpecFlow.VisualStudio.UI.ViewModels;
 public class AddNewSpecFlowProjectViewModel : INotifyPropertyChanged
 {
     private const string Runner = "SpecFlow + Runner";
-    private const string Net6 = "net6.0";
+    private const string Net8 = "net8.0";
 
 #if DEBUG
     public static AddNewSpecFlowProjectViewModel DesignData = new()
     {
-        DotNetFramework = Net6,
+        DotNetFramework = Net8,
         UnitTestFramework = Runner,
         FluentAssertionsIncluded = true
     };
 #endif
-    private string _dotNetFramework = Net6;
+    private string _dotNetFramework = Net8;
 
     public string DotNetFramework
     {
@@ -22,14 +22,14 @@ public class AddNewSpecFlowProjectViewModel : INotifyPropertyChanged
         set
         {
             _dotNetFramework = value;
-            if (_dotNetFramework == Net6 && TestFrameworks.Contains(Runner))
+            if (_dotNetFramework == Net8 && TestFrameworks.Contains(Runner))
             {
                 TestFrameworks.Remove(Runner);
                 UnitTestFramework = TestFrameworks[0];
                 OnPropertyChanged(nameof(UnitTestFramework));
             }
 
-            if (_dotNetFramework != Net6 && !TestFrameworks.Contains(Runner)) TestFrameworks.Add(Runner);
+            if (_dotNetFramework != Net8 && !TestFrameworks.Contains(Runner)) TestFrameworks.Add(Runner);
             OnPropertyChanged(nameof(TestFrameworks));
         }
     }
