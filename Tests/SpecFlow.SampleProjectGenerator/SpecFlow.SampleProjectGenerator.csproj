@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.9.1" />
-    <PackageReference Include="NuGet.CommandLine" Version="6.8.0" CopyTools="true" CopyToolsTarget="Tools-NuGet">
+    <PackageReference Include="NuGet.CommandLine" Version="6.10.1" CopyTools="true" CopyToolsTarget="Tools-NuGet">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -15,6 +15,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SpecFlow.SampleProjectGenerator.Core\SpecFlow.SampleProjectGenerator.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Nerdbank.GitVersioning" Version="3.6.139" />
   </ItemGroup>
 
 </Project>

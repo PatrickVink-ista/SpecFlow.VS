@@ -12,20 +12,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Gherkin" Version="22.0.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" />
-    <PackageReference Include="Microsoft.VisualStudio.LanguageServices" Version="4.0.1" />
-    <PackageReference Include="Nerdbank.Streams" Version="2.8.50" />
-    <PackageReference Include="System.IO.Abstractions" Version="13.2.47" />
+    <PackageReference Include="Gherkin" Version="28.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" />
+    <PackageReference Include="Microsoft.VisualStudio.LanguageServices" Version="4.10.0" />
+    <PackageReference Include="Nerdbank.Streams" Version="2.11.74" />
+    <PackageReference Include="System.IO.Abstractions" Version="21.0.29" />
     <PackageReference Include="Microsoft.Composition" Version="1.0.31" />
-    <PackageReference Include="Microsoft.VisualStudio.Language.Intellisense" Version="17.0.487" />
-    <PackageReference Include="Microsoft.VisualStudio.Editor" Version="17.0.487" /> 
-    <PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="17.0.31902.203" /> 
-    <PackageReference Include="System.Threading.Channels" Version="4.7.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Language.Intellisense" Version="17.10.191" />
+    <PackageReference Include="Microsoft.VisualStudio.Editor" Version="17.10.191" /> 
+    <PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="17.10.40170" /> 
+    <PackageReference Include="System.Threading.Channels" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Connectors\SpecFlow.VisualStudio.SpecFlowConnector.Models\SpecFlow.VisualStudio.SpecFlowConnector.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Nerdbank.GitVersioning" Version="3.6.139" />
   </ItemGroup>
 
   <Import Project="..\SpecFlow.VisualStudio.Common\SpecFlow.VisualStudio.Common.projitems" Label="Shared" />

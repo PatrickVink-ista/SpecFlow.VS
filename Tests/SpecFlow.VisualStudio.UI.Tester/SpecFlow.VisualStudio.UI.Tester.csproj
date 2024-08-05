@@ -12,4 +12,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SpecFlow.VisualStudio.UI\SpecFlow.VisualStudio.UI.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Update="Nerdbank.GitVersioning" Version="3.6.139" />
+  </ItemGroup>
 </Project>
